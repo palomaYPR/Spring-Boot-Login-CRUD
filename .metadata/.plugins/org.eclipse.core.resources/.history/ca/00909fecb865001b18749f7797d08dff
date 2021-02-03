@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF8">
+    <title>Login</title>    
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<header>
+        <nav>
+            <ul class="nav-right-section">                                
+                
+            </ul>
+        </nav>
+    </header>    
+	
+    <main>   
+    <div class="container text-center">
+        <h1>Práctica</h1>
+
+        <h3><a th:href="@{/login}">Login</a></h3>
+     
+        
+        <section class="main-input">
+            
+            <div class="main-input-container" center>                
+                    <!-- Aqui va el form de bootstrap -->
+                    <h1>Login</h1>
+                    <form method="POST">                        
+                                                                                                                                            
+                          <div class="form-group col-md-3">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="First name">
+                          </div>                                               
+                         <div class="form-group col-md-3">
+                            <label for="firstName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Last name">
+                          </div>
+                        
+                        
+                        <div class="form-group col-md-3">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                          </div>  
+                          
+                        <div class="form-group col-md-3">
+                            <label for="inputPassword">Password</label>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                         </div>
+                         
+                         
+                       
+                        <button type="submit" class="btn btn-primary">Ingresar</button>
+                        
+                      </form>
+                
+            </div>            
+        </section>
+        
+
+    </div>
+     
+</body>
+</html>

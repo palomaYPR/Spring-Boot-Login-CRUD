@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #0f3057;
+    --secondary-color:  #00587a;
+    --primary-font-color: #ffffff;
+    --border-color: #e4e4e4;
+    --header-size: 7rem;    
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    height: var(--header-size);
+    background-color: var(--primary-color);
+}
+
+header nav {
+    display: flex;    
+    justify-content: flex-end;     
+}
+
+.nav-right-section {
+    padding-left: 70px;
+    margin: 0;
+}
+
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;    
+    align-items: center;         
+}
+
+nav .nav-right-section img {    
+    height: 60px;
+    margin: 0.5rem 1rem;        
+}
+
+main {
+    margin-top: 35px; 
+    text-align: center;    
+}
+
+main .main-logo {
+    width: 530px;            
+    margin: 0 auto;  
+    margin-bottom: 10px;     
+}
+
+main .main-logo img {
+    width: 120px;
+    height: auto;
+    border-radius: 100px;
+}
+
+main .main-content p, h1{        
+    width: 70rem;  
+    margin: 0 auto;        
+}
+
+main .main-content {
+    margin-bottom: 35px;
+}
+main .main-input {
+    width: 53rem;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+    padding: 30px 30px;
+
+}
+
+main .main-input-container {    
+    width: 470px;       
+}
+
+main .main-input-container h1 {
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    color: var(--primary-font-color);
+}
+
+form {
+text-align: left;
+color: var(--primary-font-color);
+}
+
+footer {
+    width: 100%;
+    height: auto;    
+    margin-top: 70px; 
+    position: absolute;       
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: var(--primary-color); 
+    border-top: 1px solid var(--border-color); 
+    color: var(--primary-font-color);       
+}
+
+footer ul {
+    margin: 10px;
+    list-style: none;               
+}
+
+footer ul li a {
+    margin: 10px;    
+    color: var(--primary-font-color);
+}
+
+footer .footer-container #dev {
+    font-weight: bold;
+    margin: 1rem auto;
+    font-size: 2rem;   
+    color: var(--border-color); 
+}
+
+footer .footer-container {
+    text-align: center;
+    margin: 2rem;
+    padding: 0 .5rem;
+}
+
+
+footer .footer-center {  
+    margin-top: 0.5rem;
+    display: block;       
+    text-align: center;         
+    padding: 0;
+}

@@ -1,0 +1,24 @@
+package com.example;
+
+@Service
+@Transactional
+public class UserService {
+	
+	@Autowired
+	private UserRepository repo;
+	
+	public List<User> listAll(){
+		return repo.findAll();
+	}
+	
+	public void save(User user) {
+		repo.save(user);
+	}
+	public User get(String email) {
+		return repo.findByEmail(email).getEmail();
+	}
+	
+	public void delete(String email) {
+		repo.deleteByEmail(email);
+	}
+}

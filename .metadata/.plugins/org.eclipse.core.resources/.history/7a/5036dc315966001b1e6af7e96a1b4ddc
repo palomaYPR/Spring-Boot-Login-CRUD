@@ -1,0 +1,14 @@
+package com.example.commons;
+
+import java.io.Serializable;
+import java.util.List;
+
+public interface GenericService<T, EMAIL extends Serializable> {
+	T save(T entity);
+	
+	void delete(EMAIL email);
+	
+	T get(EMAIL email);
+	
+	List<T> getAll();
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<header>
+        <nav>
+            <ul class="nav-right-section">                                
+                <li><a href=""><img src="https://iieg.gob.mx/strategos/wp-content/uploads/2019/05/cropped-favicon.png" alt="IIEG Logo"></a></li>
+                <li><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj4GdGyTVxMhdolQFKnZBadxc0A6365wuoaQ&usqp=CAU" alt="ITSCH Logo"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container text-center">
+        <h1>Práctica</h1>
+
+        <h3><a th:href="@{/login}">Login</a></h3>
+	
+    <main>        
+        <section class="main-logo">
+            <div>
+                <img src="https://freepngimg.com/thumb/software/26765-5-software-photos.png" alt="Logo calcular">                                                              
+            </div>                        
+        </section>
+        <section class="main-content">
+            <h1>lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, laborum expedita quam in suscipit sunt nostrum perferendis veritatis consectetur tempora vero illo eligendi sed ipsam modi similique at, dolor voluptatibus.
+            Tempore ipsam minima dolor. Ut veritatis tenetur modi ab placeat aliquam consectetur repellendus unde nihil neque libero architecto quis culpa voluptas, hic earum id. Animi rem consequuntur dicta cupiditate eveniet.
+            Repudiandae doloribus dignissimos assumenda veniam, necessitatibus temporibus eligendi alias dolores deserunt recusandae est autem nesciunt tempore odit cumque, facilis sunt. Iusto reprehenderit consequatur maxime saepe porro, dolorum quidem et quod!</p>                                                
+        </section>
+        
+        <section class="main-input">
+            
+            <div class="main-input-container">                
+                    <!-- Aqui va el form de bootstrap -->
+                    <h1>lorem</h1>
+                    <form>                        
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputPassword4">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputAddress">Address</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputAddress2">Address 2</label>
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label for="inputState">State</label>
+                            <select id="inputState" class="form-control">
+                              <option selected>Choose...</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-2">
+                            <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                          </div>
+                        </div>
+                       
+                        <button type="submit" class="btn btn-primary">Calcular</button>
+                      </form>
+                
+            </div>            
+        </section>
+        
+
+    </div>
+     
+</body>
+</html>
