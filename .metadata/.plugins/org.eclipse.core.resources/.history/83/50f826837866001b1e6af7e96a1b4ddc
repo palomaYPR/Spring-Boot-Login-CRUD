@@ -58,7 +58,7 @@ public class AppController {
 	  } else {
 	   model.addAttribute("user", new User());
 	  }
-	  return "save";	
+	  return "save";
 	 }
 	 
 	 @PostMapping("/save")

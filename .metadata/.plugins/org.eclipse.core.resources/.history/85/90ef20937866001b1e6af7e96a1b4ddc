@@ -58,7 +58,8 @@ public class AppController {
 	  } else {
 	   model.addAttribute("user", new User());
 	  }
-	  return "save";	
+	  //return "save";
+	  return "redirect:/users";
 	 }
 	 
 	 @PostMapping("/save")

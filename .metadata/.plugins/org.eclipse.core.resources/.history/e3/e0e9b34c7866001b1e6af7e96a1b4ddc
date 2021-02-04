@@ -58,7 +58,7 @@ public class AppController {
 	  } else {
 	   model.addAttribute("user", new User());
 	  }
-	  return "save";	
+	  return "save";
 	 }
 	 
 	 @PostMapping("/save")
@@ -71,6 +71,6 @@ public class AppController {
 	 public String delete(@PathVariable Long id, Model model) {
 	  userService.delete(id);
 	 
-	  return "redirect:/users";
+	  return "redirect:/";
 	 }
 }
